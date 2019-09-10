@@ -1,0 +1,43 @@
+// Import MySQL connection.
+var connection = require("../config/connection.js");
+
+var orm = {
+    selectAll: function(callback) {
+      var queryString = "SELECT * FROM burgers;";
+      connection.query(queryString, function(err, result) {
+        if (err) {
+          throw err;
+        }
+        callback(result);
+      });
+    },
+    insertOne: function(burgerName, callback) {
+      var queryString = "INSERT INTO burgers (burger_name) VALUS (" + burgerName + ")";
+  
+      console.log(queryString);
+  
+      connection.query(queryString, vals, function(err, result) {
+        if (err) {
+          throw err;
+        }
+  
+        callback(result);
+      });
+    },
+    updateOne: function(burgerid, callback) {
+      var queryString = "UPDATE burgers SET devoured = true WHERE id ="+burgerid;
+  
+      console.log(queryString);
+      connection.query(queryString, function(err, result) {
+        if (err) {
+          throw err;
+        }
+  
+        callback(result);
+      });
+    }
+  };
+  
+  // Export the orm object for the model (cat.js).
+  module.exports = orm;
+  
