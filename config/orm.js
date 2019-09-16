@@ -12,11 +12,11 @@ var orm = {
       });
     },
     insertOne: function(burgerName, callback) {
-      var queryString = "INSERT INTO burgers (burger_name) VALUS (" + burgerName + ")";
+      var queryString = "INSERT INTO burgers (burger_name) VALUES ('" + burgerName + "')";
   
       console.log(queryString);
   
-      connection.query(queryString, vals, function(err, result) {
+      connection.query(queryString, function(err, result) {
         if (err) {
           throw err;
         }
@@ -34,6 +34,17 @@ var orm = {
         }
   
         callback(result);
+      });
+    },
+    delete: function(burgerid, cb) {
+      var queryString = "DELETE FROM burgers WHERE id = "+burgerid;
+  
+      connection.query(queryString, function(err, result) {
+        if (err) {
+          throw err;
+        }
+  
+        cb(result);
       });
     }
   };

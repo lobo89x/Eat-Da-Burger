@@ -1,0 +1,11 @@
+INSERT INTO burgers (burger_name, devoured) VALUES ("Slutty Vegan Ménage à Trois", true);
+INSERT INTO burgers (burger_name, devoured) VALUES ("BurgerKing Impossible Wopper", true);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Vortex Holy Gaucamole w/Impossible Patty", true);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Vortex KA’MANA WA’NA LEI’YA w/Impossible Patty", true);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Vortex PICKLE RICK w/Impossible Patty", true);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Vortex FAT ELVIS w/Impossible Patty (san bacon", true);
+INSERT INTO burgers (burger_name) VALUES ("Slutty Vegan Dancehall Queen");
+INSERT INTO burgers (burger_name) VALUES ("Slutty Vegan Fussy Hussy");
+INSERT INTO burgers (burger_name) VALUES ("Slutty Vegan One Night Stand");
+INSERT INTO burgers (burger_name) VALUES ("Slutty Vegan Sloppy Toppy");
+INSERT INTO burgers (burger_name) VALUES ("Slutty Vegan Super Slut");

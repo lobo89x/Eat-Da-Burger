@@ -7,8 +7,8 @@
         <h2>New Burger Type</h2>
             <form class="create-form">
             <div class="form-group">
-                <label for="ca">Burger Desc:</label>
-                <input type="text" id="ca" name="newBurger">
+                <label for="bni">Burger Desc:</label>
+                <input type="text" id="burgerNinput" name="newBurger">
             </div>
             <button type="submit">Add Burger</button>
             </form>
@@ -22,7 +22,7 @@
             <ul>
             {{#each burgers}}
                 {{#unless devoured}}
-                {{> burgers/burger-block devoured=true}}
+                {{> burger-block devoured=true}}
                 {{/unless}}
             {{/each}}
             </ul>
@@ -32,7 +32,7 @@
             <ul>
             {{#each burgers}}
                 {{#if devoured}}
-                {{> burgers/burger-block devoured=false}}
+                {{> burger-block devoured=false}}
                 {{/if}}
             {{/each}}
             </ul>

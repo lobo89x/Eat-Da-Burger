@@ -1,0 +1,11 @@
+<li>
+	<img src={{#if devoured}}"..\public\assets\img\CuteBurger002.png"{{else}}"..\public\assets\img\EATENCuteBurger001.png"{{/if}}>
+	{{burger_name}}
+
+	<button class="change-devour" data-id="{{id}}" data-devoured="{{devoured}}" data-name="{{burger_name}}">
+		{{#if devoured}}Eat it!{{/if}}
+	</button>
+
+	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+</li>
+ 
