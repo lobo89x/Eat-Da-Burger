@@ -1,7 +1,8 @@
 <div class="container">
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-5 sideTitle">
         <h2>Veggie Burgers I Have not Tried</h2>
+        	<img src="https://www.pinclipart.com/picdir/middle/245-2453224_cute-bbq-burger-clipart.png" width="170" height="170">
       </div>
       <div class="col-md-2">
         <h2>New Burger Type</h2>
@@ -13,12 +14,13 @@
             <button type="submit">Add Burger</button>
             </form>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5 sideTitle">
         <h2>Veggie Burgers I Have Tried</h2>
-      </div>
+	        <img src="https://i.pinimg.com/originals/13/9a/ce/139ace49e5175c8a2bedaa3dc4929c2b.jpg" width="170" height="170">
+	      </div>
     </div>
     <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-5 burger-Display">
             <ul>
             {{#each burgers}}
                 {{#unless devoured}}
@@ -28,7 +30,7 @@
             </ul>
         </div>
         <div class="col-md-2"></div>
-        <div class="col-md-5">
+        <div class="col-md-5 burger-Display">
             <ul>
             {{#each burgers}}
                 {{#if devoured}}
