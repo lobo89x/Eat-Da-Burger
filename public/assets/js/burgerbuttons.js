@@ -1,6 +1,7 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
     $(".change-devour").on("click", function(event) {
+      $(this).toggleClass("munched-burger");
       var id = $(this).data("id");
       console.log("this is the id you click::: "+id)
       var burger_name = $(this).data("name");
