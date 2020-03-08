@@ -14,3 +14,22 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
+  .munched-burger {
+    color: transparent;
+    animation-name: munch;
+    animation-duration: 1s;
+    position: relative;
+  }
+  @keyframes munch {
+    0%   {background: url("/public/assets/img/munch_/1.png");
+          background-size: 100% 100%;}
+    20%  {background: url("/public/assets/img/munch_/2.png");
+          background-size: 100% 100%;}
+    40%  {background: url("/public/assets/img/munch_/3.png");
+          background-size: 100% 100%;}
+    60%  {background: url("/public/assets/img/munch_/2.png");
+          background-size: 100% 100%;}
+    100% {background: url("/public/assets/img/munch_/3.png");
+          background-size: 100% 100%;}
+  }
