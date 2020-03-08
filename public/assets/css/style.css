@@ -22,17 +22,16 @@ body {
     position: relative;
     width: 95%;
     height: 155px;
-    background-image: url("/public/assets/img/munch_/3.png");
   }
   @keyframes munch {
-    0%   {background: url("/public/assets/img/munch_/1.png");
+    0%   {background: url("../img/munch_/1.png");
           background-size: 100% 100%;}
-    20%  {background: url("/public/assets/img/munch_/2.png");
+    20%  {background: url("../img/munch_/2.png");
           background-size: 100% 100%;}
-    40%  {background: url("/public/assets/img/munch_/3.png");
+    40%  {background: url("../img/munch_/3.png");
           background-size: 100% 100%;}
-    60%  {background: url("/public/assets/img/munch_/2.png");
+    60%  {background: url("../img/munch_/2.png");
           background-size: 100% 100%;}
-    100% {background: url("/public/assets/img/munch_/3.png");
+    100% {background: url("../img/munch_/3.png");
           background-size: 100% 100%;}
   }
