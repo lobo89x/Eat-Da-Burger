@@ -20,6 +20,9 @@ body {
     animation-name: munch;
     animation-duration: 1s;
     position: relative;
+    width: 95%;
+    height: 155px;
+    background-image: url("/public/assets/img/munch_/3.png");
   }
   @keyframes munch {
     0%   {background: url("/public/assets/img/munch_/1.png");

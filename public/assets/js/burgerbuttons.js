@@ -24,7 +24,7 @@ $(function() {
           }
         );
 
-      }, 5000);
+      }, 50000);
     });
   
     $(".create-form").on("submit", function(event) {
