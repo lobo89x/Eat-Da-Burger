@@ -19,9 +19,9 @@ body {
     color: transparent;
     animation-name: munch;
     animation-duration: 1s;
-    position: relative;
+    /* position: relative; */
     width: 95%;
-    height: 155px;
+    height: 55px;
   }
   @keyframes munch {
     0%   {background: url("../img/munch_/1.png");
@@ -30,8 +30,24 @@ body {
           background-size: 100% 100%;}
     40%  {background: url("../img/munch_/3.png");
           background-size: 100% 100%;}
-    60%  {background: url("../img/munch_/2.png");
+    55%  {background: url("../img/munch_/2.png");
           background-size: 100% 100%;}
-    100% {background: url("../img/munch_/3.png");
+    65%  {background: url("../img/munch_/3.png");
           background-size: 100% 100%;}
+    75%  {background: url("../img/munch_/2.png");
+          background-size: 100% 100%;}
+    85%  {background: url("../img/munch_/3.png");
+      background-size: 100% 100%;}  
+    100% {background: url("../img/munch_/2.png");
+          background-size: 100% 100%;}
+  }
+
+  .munched-burger .change-devour {
+    color: transparent;
+    background: transparent;
+  }
+
+  .munched-burger .delete-burger {
+    color: transparent;
+    background: transparent;
   }
