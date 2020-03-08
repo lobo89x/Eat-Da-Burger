@@ -1,25 +1,30 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
     $(".change-devour").on("click", function(event) {
-      $(this).toggleClass("munched-burger");
       var id = $(this).data("id");
+      var pid = "#" + $(this).data("id");
+      $(pid).addClass("munched-burger");
       console.log("this is the id you click::: "+id)
       var burger_name = $(this).data("name");
       var burger = {
         burgerid: id
       };
   
-      // Send the PUT request.
-      $.ajax("/", {
-        type: "PUT",
-        data: burger
-      }).then(
-        function() {
-          console.log("you ate this burger::  ", burger_name);
-          // Reload the page to get the updated list
-          location.reload();
-        }
-      );
+      // time out cll back fxn 
+      setTimeout(function () {
+        // Send the PUT request.
+        $.ajax("/", {
+          type: "PUT",
+          data: burger
+        }).then(
+          function() {
+            console.log("you ate this burger::  ", burger_name);
+            // Reload the page to get the updated list
+            location.reload();
+          }
+        );
+
+      }, 5000);
     });
   
     $(".create-form").on("submit", function(event) {
