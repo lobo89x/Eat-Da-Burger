@@ -3,7 +3,7 @@ body {
     font-size: 18px;
     line-height: 34px;
     /* background-color:  rgba(146, 241, 142, 0.753); */
-    background-image: url("../img/burgertemplate.png");
+    background-image: url("../img/burgertemplate2.png");
   }
   
   .burger-Display {
@@ -16,6 +16,14 @@ body {
     justify-content: space-around;
     font-family: cursive;
     font-style: italic;
+    font-size: 30px;
+    background-color:  rgba(193, 245, 191, 0.979);
+  }
+
+  .space{
+    font-family: cursive;
+    font-style: italic;
+    background-color:  rgba(193, 245, 191, 0.979);
   }
 
   .munched-burger {
